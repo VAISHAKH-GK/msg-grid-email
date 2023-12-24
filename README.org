@@ -1,0 +1,84 @@
+#+TITLE: MSG Grid Email
+#+AUTHOR: Vaishakh GK
+#+DESCRIPTION: Email service for Microservice chat application
+#+STARTUP: overview 
+
+The Msg Grid Email Service is responsible for sending emails within the msg-grid microservice chat application. It utilizes go,rabbitm mq,to quickly send emails to the users.
+
+* Table of Contents :toc:
+- [[#features][Features]]
+- [[#technologies-used][Technologies Used]]
+- [[#usage][Usage]]
+- [[#contributing][Contributing]]
+- [[#license][License]]
+- [[#contact][Contact]]
+
+* Features
+- Sending account verification emails upon user registration
+- Password reset email functionality
+- Notification emails for important events within the chat application
+- Integration with SMTP or transactional email services for reliable delivery
+
+* Technologies Used
+- Go
+- Rabbit MQ
+- SMTP
+
+* Usage
+Once the email service is running locally, it reads messages in the message queue and send emails accordingly.
+
+* Contributing
+Contributions are welcome! To contribute to this project:
+***** 1. Fork the project
+***** 2. Clone the fork
+#+begin_src bash
+git clone https://github.com/<username>/msg-grid-email.git
+#+end_src
+***** 3. Add Upstream
+#+begin_src bash
+git remote add upstream https://github.com/VAISHAKH-GK/msg-grid-email
+#+end_src
+***** 4. Craete a new branch
+#+begin_src bash
+git checkout -b feature
+#+end_src
+
+***** 5.  Make your changse
+***** 6. Commit your changes
+#+begin_src bash
+git commit -am "Add new feature"
+#+end_src
+***** 7. Update main
+#+begin_src bash
+git checkout main
+git pull upstream main
+#+end_src
+***** 8. Rebase to main
+#+begin_src bash
+git checkout feature
+git rebase main
+#+end_src
+***** 9. Push to the branch
+#+begin_src bash
+git push origin feature
+#+end_src
+***** 10. Create new Pull Request
+
+* License
+[[file:LICENSE][The GPLv3 License (GPLv3)]]
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see [[https://www.gnu.org/licenses/gpl-3.0][GPLv3]].
+
+* Contact
+Email :[[mailto:vaishakhgk2006@gmail.com][ vaishakhgk2006@gmail.com]] 
+Github:[[https://github.com/VAISHAKH-GK/][ VAISHAKH-GK]] 
